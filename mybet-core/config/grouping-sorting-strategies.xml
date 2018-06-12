@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<grouping-sorting-strategies>
+    <groupingAndSortingStrategy>
+        <id>my-first-grouping-sorting-strategy</id>
+        <name>My First Grouping and Sorting Strategy</name>
+        <description>The data should be grouped by Selection Name and Currency, and sorted by Total Payout</description>
+        <class-name>com.cm.mybet.strategies.MyFirstGroupingAndSortingStrategy</class-name>
+        <bean-name>myFirstGroupingAndSortingStrategy</bean-name>
+    </groupingAndSortingStrategy>
+</grouping-sorting-strategies>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>mybet-app</artifactId>
+    <packaging>jar</packaging>
+    <name>Mybet App</name>
+    <description>Builds the distributable MyBet app</description>
+    <url>http://github.com/mcristian/mybet</url>
+    <parent>
+        <groupId>com.cm.mybet</groupId>
+        <artifactId>mybet-parent</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <properties>
+        <start-class>com.cm.mybet.MyBet</start-class>
+    </properties>
+    <dependencies>
+		 <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>mybet-repository</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+		 <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>mybet-core</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+		<dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>mybet-grouping-sorting-strategy-api</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+		<dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>mybet-grouping-sorting-strategies</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+		<dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>mybet-objects</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+		 <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>mybet-xml-datastore</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+		<dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>mybet-reporting-api</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>mybet-reporting</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>mybet-rest-api</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
+    <build>
+        <defaultGoal>clean install</defaultGoal>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>

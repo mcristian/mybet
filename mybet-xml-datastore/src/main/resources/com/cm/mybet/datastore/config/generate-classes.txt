@@ -1,0 +1,1 @@
+D:\codingtask\mybet\mybet-xml-datastore\src\main>xjc -p com.cm.mybet.datastore.grouping.sorting.strategy.generated D:\codingtask\mybet\mybet-xml-datastore\src\main\resources\com\cm\mybet\datastore\config -d java
